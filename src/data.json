@@ -1,0 +1,33 @@
+[
+    {
+      "id": 1,
+      "name": "Smokey",
+      "img": "https://i.imgur.com/ECMObYD.png",
+      "description": "An enticing web app, showcases my prowess in React, React Router, and Tailwind. Serving as an ecommerce hub for delectable hamburgers, Smokey combines seamless navigation, dynamic components, and captivating design for a delightful culinary experience.\n\nThrough Smokey's integration of React and React Router, users traverse a flavorful assortment of hamburger offerings. Tailwind CSS enhances the visual appeal, making Smokey a tantalizing blend of technology and gastronomy in the digital realm."
+    },
+    {
+      "id": 2,
+      "name": "Bru Zane",
+      "img": "https://i.imgur.com/bXvRMjk.png",
+      "description": "At Bru Zane, I dedicated three months to refining the Holocron company's website, employing my expertise in WordPress, PHP, and Ajax. By skillfully troubleshooting bugs,\n\nBru Zane's website attained enhanced performance and interactivity. My adept utilization of WordPress, PHP, and Ajax rectified issues, exemplifying how technical proficiency can elevate a digital platform, fostering a more engaging and efficient user interaction."
+    },
+    {
+      "id": 3,
+      "name": "Paolo Montemaggi",
+      "img": "https://i.imgur.com/SXVIxS1.png",
+      "description": "Marrying design finesse and technical prowess, I shaped Paolo Montemaggi's medic-focused website. Seamlessly melding an alluring WordPress interface with bespoke plugins, I transformed the platform into an immersive digital haven.\n\nPaolo Montemaggi's medic-oriented website emerged as a symphony of aesthetics and practicality. The infusion of Google Maps API not only enhanced user interaction but also underscored the prowess of insightful design and innovative thinking."
+    },
+    {
+      "id": 4,
+      "name": "AiGap",
+      "img": "https://i.imgur.com/IJabS3i.png",
+      "description": "Navigating AiGap's digital domain, I ventured into the STEM landscape, weaving a bespoke WordPress plugin to captivate users with event interactions. My tailored solution enkindled dynamic learning, nurturing an enriched ambiance. Empowered by WordPress, AiGap's platform flourished, nurturing an interactive STEM realm.\n\nThe custom plugin's charm extended beyond engagement, spotlighting pioneering approaches that invigorate women's journey through science, technology, engineering, and mathematics."
+    },
+    {
+      "id": 5,
+      "name": "European Health and Law Technologies",
+      "img": "https://i.imgur.com/vFpSFOV.png",
+      "description": "Partnering with the University of Pisa, I was integral to the European Health and Law Technologies initiative. My multifaceted involvement encompassed adeptly managing social platforms, crafting custom WordPress plugins, and designing visually appealing flyers.\n\nThis holistic approach fortified the project's presence and functionality, ensuring impactful engagement within the intersections of health and law, while exemplifying the potential of versatile collaboration."
+    }
+  ]
+  

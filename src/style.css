@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: Encode Sans Condensed, system-ui, sans-serif;
+    cursor: none;
+  }
+}
+
+::selection {
+  background-color: rgba(0, 0, 0, 0.114); 
+  cursor: text; 
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #333333;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #CAD2C5;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+
