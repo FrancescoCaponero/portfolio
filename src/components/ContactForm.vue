@@ -1,39 +1,105 @@
 <template>
-    <h2 class="text-3xl font-[100] mb-[5rem]">Contacts</h2>
-    <div class="p-4 font-[100] text-3xl flex flex-col gap-4 border-l-[.1rem] border-dark-green">
+  
+  <div>
+    <div class="p-4 font-[100] text-3xl flex flex-col gap-4 ">
+      <div class="flex flex-col border-l-[.1rem] border-dark-green pl-4">
         <input type="text" v-model="firstName" class="styled-input" placeholder="First Name" />
         <input type="text" v-model="lastName" class="styled-input" placeholder="Last Name" />
         <input type="email" v-model="email" class="styled-input" placeholder="Email*" required />
         <textarea v-model="comment" class="styled-input" placeholder="Comment"></textarea>
-        <button @click="sendForm" class="styled-button">Send</button>
+      </div>
+      <button @click="sendEmail" class="styled-button" :disabled="isLoading">
+        {{ isLoading ? 'Sending...' : 'Send' }}
+      </button>
+      </div>
     </div>
-</template>
+  <div v-if="isSuccess" class="success-message text-4xl font-[100]">Success, email sent!</div>
+  <div v-if="isLoading" class="loading-message text-4xl font-[100]">
+          Loading . . .
+  </div>
+  </template>
 
 <script>
-export default {
-    name: 'ContactForm',
+  export default {
     data() {
-        return {
-            firstName: '',
-            lastName: '',
-            email: '',
-            comment: '',
-        };
+      return {
+        firstName: '',
+        lastName: '',
+        email: '',
+        comment: '',
+        isLoading: false,
+        isSuccess: false,
+      };
     },
     methods: {
-        sendForm() {
-            console.log('Form data:', {
-                firstName: this.firstName,
-                lastName: this.lastName,
-                email: this.email,
-                comment: this.comment,
-            });
-        }
-    }
-}
-</script>
+        sendEmail() {
+      this.isLoading = true;
+      const templateParams = {
+        to_name: 'Francesco Caponero', 
+        user_name: `${this.firstName} ${this.lastName}`,
+        user_email: `${this.email}`,
+        message: this.comment,
+      };
+
+      window.emailjs
+        .send(
+          'your id',
+          'your template id',
+          templateParams,
+          'key'
+        )
+        .then(() => {
+          this.firstName = '';
+          this.lastName = '';
+          this.email = '';
+          this.comment = '';
+          this.isLoading = false;
+          this.isSuccess = true; 
+          setTimeout(() => {
+            this.isSuccess = false; 
+          }, 2000); 
+        })
+        .catch((error) => {
+          console.error('Error sending email:', error);
+          this.isLoading = false; 
+        })
+        .finally(() => {
+          this.isLoading = false;
+        });
+    },
+  },
+  };
+  </script>
 
 <style scoped>
+
+textarea {
+  resize: none;
+}
+
+
+.success-message {
+  color: rgb(27, 101, 59);
+  font-size: 2.5rem;
+  text-align: center;
+  margin-top: 1rem;
+  animation: fadeOut 3s ease-in-out; /* You can define the animation */
+}
+.loading-message {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-top: 1rem;
+  animation: fadeOut 3s ease-in-out; /* You can define the animation */
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 .styled-input {
     background-color: transparent;
     border: none;

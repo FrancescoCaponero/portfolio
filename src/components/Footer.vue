@@ -1,14 +1,14 @@
 <template>
-    <div class="flex font-light items-end justify-between text-lg font-thin">
-        <h1 class="flex flex-col">
-            <span>
-                Francesco Caponero
-            </span>
-            <span class="font-medium">
-                Web Developer
-            </span>
+    <div class="flex md:flex-row w-full flex-col font-light md:items-end justify-between text-lg font-thin">
+        <h1 class="flex md:flex-col justify-between">
+                <span>
+                    Francesco Caponero
+                </span>
+                <span class="font-medium flex items-center justify-center gap-1 line">
+                    Web Developer
+                </span>
         </h1>
-        <h1 class="text-sm">© 2023 Francesco Caponero, All Rights Reserved</h1>
+        <h1 class="text-sm self-center ">© 2023 Francesco Caponero, All Rights Reserved</h1>
     </div>
 </template>
 <script>
@@ -17,6 +17,8 @@ export default {
 
 }
 </script>
-<style lang="">
-    
+<style >
+    .line{
+        line-height: .6rem;
+    }
 </style>

@@ -1,3 +1,15 @@
+
+<template>
+  <div class="min-w-screen h-[93vh] md:min-h-screen flex justify-center items-center h-screen">
+    <div class="md:w-[calc(100%-10rem)] md:max-w-[1400px] w-full p-[.8rem] md:p-[2rem] h-full text-dark-green flex flex-col justify-between">
+        <Header></Header>
+        <CarouselComp></CarouselComp>
+      <Footer></Footer>
+    </div>
+  </div>
+
+</template>
+
 <script>
 import Header from './Header.vue';
 import Footer from './Footer.vue';
@@ -12,15 +24,4 @@ export default {
   }
 }
 </script>
-
-<template>
-  <div class="min-w-screen min-w-screen flex justify-center items-center h-screen">
-    <div class="w-[calc(100%-10rem)] max-w-[1400px] p-[2rem] h-full text-dark-green flex flex-col justify-between">
-      <Header></Header>
-      <CarouselComp></CarouselComp>
-      <Footer></Footer>
-    </div>
-  </div>
-
-</template>
 
