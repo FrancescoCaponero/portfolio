@@ -43,10 +43,10 @@
 
       window.emailjs
         .send(
-          'your id',
-          'your template id',
+          import.meta.env.VITE_SERVICE_ID,
+          import.meta.env.VITE_TEMPLATE_ID,
           templateParams,
-          'key'
+          import.meta.env.VITE_PUBLIC_KEY,
         )
         .then(() => {
           this.firstName = '';
@@ -67,7 +67,7 @@
           this.isLoading = false;
         });
     },
-  },
+  }
   };
   </script>
 

@@ -33,6 +33,25 @@
       "img": "https://i.imgur.com/bXvRMjk.png",
       "excerpt": "I dedicated three months to refining the Holocron company's website, employing my expertise in WordPress, PHP, and Ajax. By skillfully troubleshooting bugs,\n\nBru Zane's website attained enhanced performance and interactivity. My adept utilization of WordPress, PHP, and Ajax rectified issues, exemplifying how technical proficiency can elevate a digital platform, fostering a more engaging and efficient user interaction.",
       "link": "https://bru-zane.com/"
+    },
+    {
+      "id": 6,
+      "name": "Side Projects",
+      "img": "",
+      "projects": [
+        {
+          "id": 1,
+          "name": "GridLab"
+        },
+        {
+          "id": 2,
+          "name": "Weather App"
+        },
+        {
+          "id": 3,
+          "name": "Figma Style Extractor"
+        }
+      ]
     }
   ]
   
