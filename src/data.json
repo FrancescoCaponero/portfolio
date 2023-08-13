@@ -37,19 +37,25 @@
     {
       "id": 6,
       "name": "Side Projects",
-      "img": "",
-      "projects": [
+      "img": "https://i.imgur.com/L9X9Rnd.png",
+      "others": [
         {
           "id": 1,
-          "name": "GridLab"
+          "name": "GridLab",
+          "description": "Developed a cutting-edge Max MSP Ableton plugin that transforms video to audio through black-white contrast analysis. This innovative tool utilizes MIDI-mappable grids to translate visual variations into immersive auditory experiences.",
+          "link": "https://drive.google.com/file/d/1vlRJ03I8KplSjMKGg-Jq2ucx1dKBj-u7/view"
         },
         {
           "id": 2,
-          "name": "Weather App"
+          "name": "Weather App",
+          "description": "Crafted an intuitive weather app that provides real-time forecasts with precision. Combining design and functionality, the app offers users accurate weather data and a seamless user experience.",
+          "link": "https://64cf815df1f1823d60e8a9b7--singular-fudge-6187c0.netlify.app/"
         },
         {
           "id": 3,
-          "name": "Figma Style Extractor"
+          "name": "Figma Style Extractor",
+          "description": "Designed a Figma plugin extractor that effortlessly retrieves font and color data from projects. Empowering designers with efficient workflow, this tool simplifies the extraction process, enhancing creative insights and productivity.",
+          "link": "https://figma-style-extractor.netlify.app/"
         }
       ]
     }

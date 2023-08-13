@@ -7,11 +7,18 @@
     <Carousel class="text-dark-green w-full mt-[4rem] md:mt-0" ref="myCarousel">
       <Slide v-for="project in projects" :key="project.id">
         <Transition>
-        <div v-if="isShowed" class="absolute inset-0 w-full h-full bg-white/[1] z-20">
-            <div class="p-[1rem] w-[calc(100%-5rem)] w-full text-left font-[100] text-2xl">
+        <div v-if="isShowed" 
+        :class="'absolute inset-0 w-full ' + (project.id === (projects.length) ? 'overflow-y-scroll ' : '') + 'bg-white/[1] z-20'">            <div class="p-[1rem] w-[calc(100%-5rem)] w-full text-left font-[100] text-2xl">
               <div class="flex flex-col gap-4 justify-left items-left w-full text-left font-[100] text-2xl">
                 <h1>{{ project.name }}</h1>
                 <p>{{ project.excerpt }}</p>
+                <div v-for="other in project.others" class="h-fit">
+                  <div>
+                    <h1 class="mb-[1rem]">{{ other.name }}</h1>
+                    <p >{{ other.description }}</p>
+                    <a :href="other.link" class="underline text-xl cursor-pointer  hover:opacity-[.65] transition-all" target="_blank" rel="noopener noreferrer">{{ other.link }}</a>
+                  </div>
+                </div>
                 <a :href="project.link" class="underline text-xl cursor-pointer  hover:opacity-[.65] transition-all" target="_blank" rel="noopener noreferrer">{{ project.link }}</a>
               </div>
             </div>
@@ -26,6 +33,12 @@
               <p class="md:hidden max-w-full text-xl font-[300]  leading-5 mt-[1rem] text-left">
                 {{ project.excerpt }}
               </p>
+              <div v-for="other in project.others" class="h-fit">
+                <div class="flex flex-col justify-start mb-[.5rem]">
+                  <h1 class="md:hidden max-w-full text-xl font-[300] text-left">{{ other.name }}</h1>
+                  <a :href="other.link" class="md:hidden max-w-full text-xl font-[300] text-left underline leading-5 text-left" target="_blank" rel="noopener noreferrer">{{ other.link }}</a>
+                </div>
+              </div>
             </div>
           </div>
         </Slide>

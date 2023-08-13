@@ -1,6 +1,6 @@
 <template>
     <div class="flex md:flex-row w-full flex-col font-light md:items-end justify-between text-lg font-thin">
-        <h1 class="flex md:flex-col justify-between">
+        <h1 class="flex md:flex-col justify-between items-start">
                 <span>
                     Francesco Caponero
                 </span>
@@ -8,7 +8,7 @@
                     Web Developer
                 </span>
         </h1>
-        <h1 class="text-sm self-center ">© 2023 Francesco Caponero, All Rights Reserved</h1>
+        <h1 class="text-sm self-end ">© 2023 Francesco Caponero, All Rights Reserved</h1>
     </div>
 </template>
 <script>

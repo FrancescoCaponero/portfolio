@@ -9,7 +9,7 @@
 }
 
 ::selection {
-  background-color: rgba(0, 0, 0, 0.114); 
+  background-color: rgba(255, 255, 255, 0.114); 
   cursor: text; 
 }
 
@@ -18,11 +18,11 @@
 }
 
 ::-webkit-scrollbar-track {
-  background: #333333;
+  background: #f6f6f6;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #CAD2C5;
+  background: #dbdbdb;
 }
 
 ::-webkit-scrollbar-thumb:hover {
